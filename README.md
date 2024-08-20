@@ -47,42 +47,42 @@ The NYC Taxi dataset contains detailed trip records, offering a comprehensive vi
 * **step-1:** Clone the Repo
 * **step-2:** Import Libraries
 
-import pikle
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import warnings
-warnings.filterwarnings('ignore')
-import math
+* import pikle
+* import pandas as pd
+* import numpy as np
+* import matplotlib.pyplot as plt
+* import seaborn as sns
+* import warnings
+* warnings.filterwarnings('ignore')
+* import math
 
-from sklearn.model_selection import train_test_split # feature selection
-from sklearn.compose import ColumnTransformer # data preprocessing
-from sklearn.pipeline import Pipeline # Ml Pipe line
-from sklearn.preprocessing import OneHotEncoder # Categorical data preprocessing
-from sklearn.preprocessing import PowerTransformer, MinMaxScaler, StandardScaler # Numerical data preprocessing
-from sklearn.preprocessing import PolynomialFeatures # Numerical data preprocessing
+* from sklearn.model_selection import train_test_split # feature selection
+* from sklearn.compose import ColumnTransformer # data preprocessing
+* from sklearn.pipeline import Pipeline # Ml Pipe line
+* from sklearn.preprocessing import OneHotEncoder # Categorical data preprocessing
+* from sklearn.preprocessing import PowerTransformer, MinMaxScaler, StandardScaler # Numerical data preprocessing
+* from sklearn.preprocessing import PolynomialFeatures # Numerical data preprocessing
 
-from sklearn.linear_model import Lasso, Ridge ## For handling overfitting model
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor ## Tree model
-from sklearn.ensemble import GradientBoostingRegressor
+* from sklearn.linear_model import Lasso, Ridge ## For handling overfitting model
+* from sklearn.linear_model import LinearRegression
+* from sklearn.tree import DecisionTreeRegressor ## Tree model
+* from sklearn.ensemble import GradientBoostingRegressor
 
 
-from sklearn.metrics import r2_score, mean_squared_error,mean_absolute_error,mean_absolute_percentage_error #Evaluation Matrix
-from sklearn.model_selection import GridSearchCV #Hyperparameter Tuning
+* from sklearn.metrics import r2_score, mean_squared_error,mean_absolute_error,mean_absolute_percentage_error #Evaluation Matrix
+* from sklearn.model_selection import GridSearchCV #Hyperparameter Tuning
 
 * **step-3:** Load Dataset
   
 * **Run command**
 
   # To load the model 
-with open('model_gradient_boost.pkl', 'rb') as file:
-    loaded_model = pickle.load(file) 
+* with open('model_gradient_boost.pkl', 'rb') as file:
+    * loaded_model = pickle.load(file) 
 
  # To load the data
-with open('model_data.pkl', 'rb') as file:
-    loaded_model = pickle.load(file)      
+* with open('model_data.pkl', 'rb') as file:
+    * loaded_model = pickle.load(file)      
 
 
     
