@@ -22,14 +22,19 @@ The NYC Taxi dataset contains detailed trip records, offering a comprehensive vi
 **Trip Information:**
 
 **Pickup and Dropoff Datetimes:** Timestamps indicating when and where the ride started and ended.
+
 **Pickup and Dropoff Locations:** Latitude and longitude coordinates, or taxi zones indicating where the ride began and ended.
+
 **Passenger Count:** The number of passengers in the taxi during the ride.
+
 **Trip Distance:** The distance covered during the trip, typically in miles.
 
 **Other Metadata:**
 
 **Vendor ID:** Identifies the provider of the taxi service.
+
 **Trip Type:** Indicates whether the trip was a street-hail or a dispatch trip.
+
 **Store and Forward Flag:** Indicates whether the trip record was held in the taxi’s memory before sending to the vendor (for instances when the vehicle was outside network coverage).
 
 **Conclusion for Model Training:**
